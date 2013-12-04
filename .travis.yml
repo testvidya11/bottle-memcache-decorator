@@ -8,5 +8,3 @@ services:
   - memcached # will start memcached
 # command to build & run tests
 script: "python setup.py develop && nosetests"
-notifications:
-  email: true
