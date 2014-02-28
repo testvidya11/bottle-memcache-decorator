@@ -6,7 +6,13 @@ python:
 install: "pip install -r requirements.txt --use-mirrors"
 
 
+
+
 services:
   - memcached # will start memcached
 # command to build & run tests
+
 script: "python setup.py develop && nosetests"
+
+notifications:
+  email: vidyac.raghav@gmail.com
